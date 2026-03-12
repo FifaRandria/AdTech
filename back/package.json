@@ -2,10 +2,11 @@
   "name": "back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,12 @@
     "mongoose": "^9.3.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
