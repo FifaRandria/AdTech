@@ -29,10 +29,10 @@ export async function createCampaign( data: {
     startDate: string;
     endDate:  string;
     budget: number;
-    targetCountries: string[]''
+    targetCountries: string[];
 }) {
     const res = await fetch(`${API_URL}/campaigns`, {
-        method: "POST";
+        method: "POST",
         headers: {"Content-type": "application/json"},
         body: JSON.stringify(data),
     });
