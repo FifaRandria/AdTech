@@ -68,7 +68,7 @@ export default function CampaignsPage() {
                     {c.impressionsServed.toLocaleString()}
                   </td>
                   <td className="px-4 py-3 text-right text-gray-600">
-                    {c.budget.toLocaleString()} €
+                    {c.budget.toLocaleString()}
                   </td>
                 </tr>
               ))}
