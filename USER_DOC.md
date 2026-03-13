@@ -30,6 +30,9 @@ http://localhost:3000
  - MomgoDB  devrait etre installe localement
  - node.js v20+
  - Fichier back/.env avec MONGO_URI=mongodb://localhost:27017/adCampaignDB
+ example du fichier .env :
+    PORT=5000
+    MONGO_URI=mongodb://127.0.0.1:27017/nom_de_la_base
 
 
 ## petit resume
