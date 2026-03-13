@@ -4,6 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import campaignRoutes from "./routes/Campaigns";
+import {serveAdRouter, getStats} from "./routes/Ad";
 
 
 const app: Application = express();
@@ -33,6 +34,8 @@ app.get("/", (req, res) =>{
 });
 
 app.use("/campaigns", campaignRoutes);
+app.use("/serve-ad", serveAdRouter);
+app.get("/stats", getStats);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
