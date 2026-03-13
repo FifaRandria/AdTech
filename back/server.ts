@@ -3,9 +3,8 @@ import express, { Application } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 
-// import campaignRoutes from "./routes/campaigns";
-// import { console } from "node:inspector";
-// import { error } from "node:console";
+import campaignRoutes from "./routes/Campaigns";
+
 
 const app: Application = express();
 
@@ -33,7 +32,7 @@ app.get("/", (req, res) =>{
     res.json({message: "API working"});
 });
 
-// app.use("/campaigns", campaignRoutes);
+app.use("/campaigns", campaignRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
